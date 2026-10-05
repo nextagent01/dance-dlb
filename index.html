@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ダンススタジオBASIS 豊中服部教室｜3歳から基礎をしっかり学べるK-POP・ストリートダンス</title>
+<meta name="description" content="豊中・服部天神駅すぐのダンススタジオBASIS 豊中服部教室。3歳から通えて、初心者にやさしく、ダンスの基礎から徹底的に上達できるK-POP＆ストリートダンススクール。体験レッスン1,100円（キッズ550円）。">
+<meta property="og:title" content="ダンススタジオBASIS 豊中服部教室｜3歳から基礎をしっかり">
+<meta property="og:description" content="はじめてでも、基礎からしっかり上手くなる。服部天神駅から徒歩1分のK-POP＆ストリートダンススクール。">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F5F6;
+  --blush:#FFE4EE;
+  --lilac:#EFE9FF;
+  --black:#141218;
+  --peach:#FFE6DC;
+  --mint:#E2F5EE;
+  --rose:#FF4F8B;
+  --rose-deep:#E0306E;
+  --pink:#FF9EBB;
+  --lav:#B9A3F5;
+  --gold:#D4A85E;
+  --ink:#17131C;
+  --ink-soft:#6B6371;
+  --line:#06C755;
+  --grad:linear-gradient(110deg,#FF4F8B 0%,#FF6FA0 40%,#A97CF5 100%);
+  --grad-soft:linear-gradient(135deg,#FFF0F5,#F3EEFF);
+  --shadow:0 12px 30px rgba(20,18,24,.10);
+  --shadow-sm:0 6px 16px rgba(20,18,24,.08);
+  --radius:16px;
+  --serif:'Anton',sans-serif;
+  --script:'Permanent Marker',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{
+  font-family:'Zen Maru Gothic',system-ui,sans-serif;font-weight:500;
+  color:var(--ink);background:var(--bg);line-height:1.9;letter-spacing:.03em;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(20,18,24,.92);color:#fff;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{width:36px;height:42px;object-fit:contain;background:#fff;border-radius:8px;padding:3px}
+.logo-text{line-height:1.2}
+.logo-text b{font-family:var(--serif);font-weight:400;font-size:22px;display:block;letter-spacing:.12em}
+.logo-text small{font-size:11px;font-weight:700;color:#B8AFBF;letter-spacing:.08em}
+.nav-links{display:flex;gap:22px;list-style:none;font-weight:700;font-size:14px}
+.nav-links a{text-decoration:none;position:relative;color:#fff}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;background:var(--grad);transform:scaleX(0);transition:transform .25s}
+.nav-links a:hover::after{transform:scaleX(1)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:inherit;font-weight:700;font-size:15px;letter-spacing:.06em;text-decoration:none;
+  padding:14px 28px;border-radius:999px;border:none;cursor:pointer;white-space:nowrap;
+  background:#fff;color:var(--ink);box-shadow:var(--shadow-sm);
+  transition:transform .2s,box-shadow .2s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(200,69,111,.22)}
+.btn-main{background:var(--grad);color:#fff;box-shadow:0 10px 24px rgba(232,101,143,.35)}
+.btn-line{background:var(--line);color:#fff;box-shadow:0 10px 24px rgba(6,199,85,.25)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7);box-shadow:none}
+.btn-sm{padding:9px 18px;font-size:13px}
+@media (max-width:980px){.nav-links{display:none}}
+
+/* ---------- sparkle ---------- */
+.spark{position:absolute;color:var(--rose);pointer-events:none;animation:sparkle 3s ease-in-out infinite}
+@keyframes sparkle{0%,100%{opacity:.25;transform:scale(.7) rotate(0)}50%{opacity:1;transform:scale(1.1) rotate(20deg)}}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;padding:64px 0 88px;overflow:hidden;
+  color:#fff;
+  background:
+    radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.5px) 0 0/14px 14px,
+    radial-gradient(600px 420px at 88% 18%,rgba(169,124,245,.45),transparent 70%),
+    radial-gradient(520px 380px at 0% 100%,rgba(255,79,139,.40),transparent 70%),
+    var(--black);
+}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.hero-script{font-family:var(--script);font-size:clamp(22px,3vw,30px);color:var(--rose);line-height:1;margin-bottom:14px;transform:rotate(-3deg);transform-origin:left}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;background:var(--rose);border-radius:4px;transform:rotate(-1.5deg);
+  padding:6px 16px;font-weight:900;font-size:13px;color:#fff;margin-bottom:22px;
+}
+.hero h1 .en{display:block;font-family:var(--serif);font-weight:400;font-size:.62em;letter-spacing:.04em;line-height:1.05;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.55);margin-bottom:12px}
+.hero h1{font-weight:900;font-size:clamp(34px,5.4vw,60px);line-height:1.38;letter-spacing:.04em;margin-bottom:22px}
+.hero-lead{font-size:clamp(15px,1.8vw,17px);font-weight:700;margin-bottom:30px;color:#C9C1CF}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.hero-points{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
+.hero-points li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:10px;color:#fff;padding:8px 16px;font-weight:700;font-size:13px;box-shadow:var(--shadow-sm);text-align:center;line-height:1.4}
+.hero-points b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;color:var(--rose);letter-spacing:.03em}
+
+.hero-visual{position:relative;max-width:440px;width:100%;justify-self:center;aspect-ratio:4/5}
+.arch{
+  /* images/ に写真を置くと表示されます。無い場合はグラデーションになります */
+  position:absolute;inset:0;border-radius:14px;overflow:hidden;transform:rotate(-2deg);
+  background-size:cover;background-position:center;box-shadow:var(--shadow);
+}
+.hero-arch{background-image:url(images/hero.jpg),radial-gradient(circle,rgba(255,255,255,.18) 1.5px,transparent 2px),linear-gradient(160deg,#3A2B4A,#7A3C8F 55%,#FF4F8B);background-size:cover,12px 12px,cover}
+.tape{position:absolute;z-index:3;top:-14px;left:38%;width:110px;height:30px;background:rgba(255,255,255,.8);transform:rotate(-6deg)}
+.arch-frame{position:absolute;inset:18px -18px -18px 18px;background:var(--grad);border-radius:14px;transform:rotate(2deg)}
+.chip-float{
+  position:absolute;z-index:4;background:#fff;border:2px solid var(--ink);
+  border-radius:6px;padding:4px 14px;font-family:var(--serif);font-weight:400;font-size:clamp(16px,2vw,22px);letter-spacing:.04em;
+  color:var(--ink);box-shadow:4px 4px 0 var(--rose);animation:float 4s ease-in-out infinite;white-space:nowrap;
+}
+.chip-float.jp{font-family:'Zen Maru Gothic';font-weight:900;font-size:14px;background:var(--rose);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+.cf1{rotate:-6deg}.cf2{rotate:5deg}.cf3{rotate:-3deg}.cf4{rotate:4deg}
+.cf1{top:10%;left:-12%}
+.cf2{top:36%;right:-10%;animation-delay:.7s}
+.cf3{bottom:22%;left:-8%;animation-delay:1.4s}
+.cf4{bottom:4%;right:-4%;animation-delay:2.1s}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -10px}}
+@media (max-width:840px){
+  .hero{padding:36px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:56px}
+  .hero-visual{max-width:300px}
+  .cf1{left:-4%}.cf3{left:-4%}.cf2{right:-4%}
+}
+
+/* ---------- ribbon marquee ---------- */
+.marquee{background:var(--rose);color:var(--ink);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);overflow:hidden;white-space:nowrap;padding:12px 0}
+.marquee-inner{display:inline-block;animation:marquee 36s linear infinite}
+.marquee span{font-family:var(--serif);font-size:22px;letter-spacing:.06em;text-transform:uppercase;margin:0 16px}
+.marquee i{font-style:normal;opacity:.8}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:96px 0;position:relative}
+.sec-head{text-align:center;margin-bottom:52px}
+.sec-en{font-family:var(--serif);font-size:clamp(44px,7vw,80px);text-transform:uppercase;letter-spacing:.02em;line-height:1;display:block;color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.dark{background:var(--black);color:#fff}
+.dark .sec-en{-webkit-text-stroke-color:rgba(255,255,255,.75)}
+.dark .sec-head p{color:#B9AFC0}
+.sec-head h2{display:inline-block;font-weight:900;font-size:clamp(20px,3vw,28px);letter-spacing:.08em;margin-top:-14px;position:relative;background:var(--rose);color:#fff;padding:2px 16px;transform:rotate(-1.5deg)}
+.sec-head p{margin-top:12px;font-weight:700;color:var(--ink-soft);font-size:15px}
+.soft{background:var(--grad-soft)}
+.white{background:#fff}
+
+/* ---------- concept ---------- */
+.concept{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.c-card{background:#fff;border-radius:var(--radius);padding:36px 28px 30px;box-shadow:var(--shadow);text-align:center;position:relative;overflow:hidden}
+.c-card::before{content:"";position:absolute;top:-60px;right:-60px;width:160px;height:160px;border-radius:50%;background:var(--grad-soft)}
+.c-num{position:relative;font-family:var(--serif);font-size:52px;line-height:1}
+.c-card h3{position:relative;font-weight:900;font-size:20px;margin:14px 0 10px;letter-spacing:.06em}
+.c-card p{position:relative;font-size:14px;font-weight:700;color:var(--ink-soft);text-align:left}
+.c-card .tag{position:relative;display:inline-block;font-size:12px;font-weight:900;color:var(--rose-deep);background:var(--blush);border-radius:999px;padding:2px 12px;margin-bottom:6px}
+@media (max-width:900px){.concept{grid-template-columns:1fr}}
+
+/* ---------- basics band ---------- */
+.basics{margin-top:40px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:30px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.basics h3{font-weight:900;font-size:18px;line-height:1.6}
+.basics h3 small{display:block;font-family:var(--script);font-size:22px;color:var(--rose);font-weight:400;line-height:1.3}
+.basics ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.basics li{background:var(--ink);color:#fff;border-radius:4px;padding:6px 16px;font-weight:700;font-size:14px}
+.basics li::before{content:"✔ ";color:var(--rose)}
+@media (max-width:700px){.basics{grid-template-columns:1fr;text-align:center}.basics ul{justify-content:center}}
+
+/* ---------- steps (roadmap) ---------- */
+.road{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.road::before{content:"";position:absolute;top:44px;left:12%;right:12%;height:2px;background:repeating-linear-gradient(90deg,var(--pink) 0 8px,transparent 8px 16px)}
+.r-step{position:relative;text-align:center}
+.r-dot{
+  width:88px;height:88px;margin:0 auto 18px;border-radius:50%;background:#fff;box-shadow:var(--shadow);
+  display:grid;place-items:center;line-height:1.1;
+}
+.r-dot span{font-family:var(--serif);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);display:block}
+.r-dot b{font-family:var(--serif);font-size:32px;font-weight:400}
+.r-step:last-child .r-dot{background:var(--grad)}
+.r-step:last-child .r-dot span,.r-step:last-child .r-dot b{color:#fff}
+.r-box{color:var(--ink);background:#fff;border-radius:22px;padding:20px 18px;box-shadow:var(--shadow-sm);text-align:left}
+.r-age{display:inline-block;font-size:12px;font-weight:900;color:#fff;background:var(--rose);border-radius:999px;padding:1px 12px;margin-bottom:6px}
+.r-box h3{font-weight:900;font-size:17px;margin-bottom:6px}
+.r-box p{font-size:13px;font-weight:700;color:var(--ink-soft)}
+@media (max-width:900px){
+  .road{grid-template-columns:1fr;gap:16px}
+  .road::before{top:20px;bottom:20px;left:43px;right:auto;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--pink) 0 8px,transparent 8px 16px)}
+  .road::before{left:31px}
+  .r-step{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center}
+  .r-dot{margin:0;width:64px;height:64px}
+  .r-dot b{font-size:24px}
+}
+
+/* ---------- genres ---------- */
+.genres{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.genre{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.genre:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.genre-top{padding:26px 24px 18px;position:relative}
+.genre-name{font-family:var(--serif);font-weight:400;font-size:34px;letter-spacing:.03em;text-transform:uppercase;line-height:1.1;display:block}
+.genre-kana{font-size:12px;font-weight:700;color:var(--ink-soft);letter-spacing:.1em}
+.genre-body{padding:0 24px 24px;display:flex;flex-direction:column;flex:1}
+.genre .quote{font-size:16px;font-weight:900;margin-bottom:6px}
+.genre p{font-weight:700;font-size:14px;color:var(--ink-soft)}
+.genre-foot{margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chip{font-size:11px;font-weight:900;border-radius:999px;padding:3px 11px;background:var(--bg);color:var(--ink-soft);border:1px solid rgba(75,58,82,.12)}
+.chip.girls{background:var(--blush);color:var(--rose-deep);border-color:transparent}
+.chip.star{background:var(--grad);color:#fff;border-color:transparent}
+.video{margin-left:auto;font-size:12px;font-weight:900;text-decoration:none;color:var(--rose)}
+.video:hover{text-decoration:underline}
+.g-kids .genre-top{background:linear-gradient(135deg,#FFE6DC,#FFF3D9)}
+.g-base .genre-top{background:linear-gradient(135deg,#FFE3EC,#EFE6FF)}
+.g-kpop .genre-top{background:linear-gradient(135deg,#FFD6E4,#FFEFF4)}
+.g-girls .genre-top{background:linear-gradient(135deg,#FFE0F0,#F6E4FF)}
+.g-jazz .genre-top{background:linear-gradient(135deg,#ECE3FF,#F8F2FF)}
+.g-hiphop .genre-top{background:linear-gradient(135deg,#DDF0FF,#F1F8FF)}
+.g-lock .genre-top{background:linear-gradient(135deg,#E2F5EE,#F3FBF7)}
+.g-break .genre-top{background:linear-gradient(135deg,#E9E5F0,#F7F5FA)}
+.g-waack .genre-top{background:linear-gradient(135deg,#FFF0D9,#FFF8EC)}
+.g-kids .genre-name{color:#E07A4F}.g-base .genre-name{color:var(--rose)}.g-kpop .genre-name{color:var(--rose-deep)}
+.g-girls .genre-name{color:#D0569E}.g-jazz .genre-name{color:#8C6BDB}.g-hiphop .genre-name{color:#4A97D6}
+.g-lock .genre-name{color:#3FA483}.g-break .genre-name{color:#6E5E80}.g-waack .genre-name{color:#C4924A}
+.genre.feature{grid-column:span 1;outline:3px solid var(--ink);outline-offset:-3px;box-shadow:6px 6px 0 var(--rose)}
+@media (max-width:900px){.genres{grid-template-columns:1fr 1fr}}
+@media (max-width:580px){.genres{grid-template-columns:1fr}}
+
+/* ---------- quiz ---------- */
+.quiz-sec{background:radial-gradient(circle,rgba(20,18,24,.12) 1px,transparent 1.5px) 0 0/14px 14px,var(--grad)}
+.quiz-sec .sec-en{-webkit-text-stroke-color:#fff}
+.quiz-sec .sec-head h2{background:var(--ink)}
+.quiz-sec .sec-head p{color:#fff}
+.quiz{max-width:720px;margin:0 auto;background:#fff;border-radius:18px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:40px}
+.q-step{display:none}
+.q-step.active{display:block;animation:pop .35s ease}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.q-num{font-family:var(--serif);color:var(--rose);font-size:16px;letter-spacing:.12em;text-transform:uppercase}
+.q-title{font-size:clamp(19px,2.8vw,24px);font-weight:900;margin:4px 0 22px}
+.q-opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.q-opt{
+  font-family:inherit;font-size:16px;font-weight:900;color:var(--ink);text-align:left;
+  background:#fff;border:1.5px solid rgba(232,101,143,.25);border-radius:20px;padding:14px 20px;cursor:pointer;
+  transition:transform .2s,background .2s,border-color .2s;
+}
+.q-opt:hover,.q-opt:focus-visible{background:var(--blush);border-color:var(--rose);transform:translateY(-2px)}
+.q-opt small{display:block;font-size:12px;font-weight:700;color:var(--ink-soft)}
+.q-opts .q-opt:last-child:nth-child(odd){grid-column:1/-1}
+@media (max-width:580px){.q-opts{grid-template-columns:1fr}.quiz{padding:26px 20px}}
+.q-result-list{display:grid;gap:12px;margin:16px 0 22px}
+.q-result-item{border-radius:20px;padding:14px 18px;background:var(--bg);border:1px solid rgba(232,101,143,.2)}
+.q-result-item b{font-size:17px}
+.q-result-item span{font-weight:700;color:var(--ink-soft);font-size:13px}
+.q-back{background:none;border:none;font-family:inherit;font-weight:700;color:var(--ink-soft);text-decoration:underline;cursor:pointer;margin-top:14px;font-size:14px}
+
+/* ---------- schedule ---------- */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:30px}
+.filter{
+  font-family:inherit;font-weight:700;font-size:14px;padding:8px 20px;border-radius:999px;
+  border:1px solid rgba(232,101,143,.3);background:#fff;color:var(--ink);cursor:pointer;transition:all .2s;
+}
+.filter[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.day{background:#fff;border-radius:22px;overflow:hidden;min-width:0;box-shadow:var(--shadow-sm)}
+.day-head{font-weight:900;text-align:center;padding:10px 6px;background:var(--ink);color:#fff;font-size:16px;letter-spacing:.1em}
+.day:nth-child(6) .day-head{background:var(--rose)}
+.day:nth-child(7) .day-head{background:#CFC9D3;color:var(--ink)}
+.day-body{padding:10px;display:grid;gap:8px;align-content:start}
+.lesson{border-radius:14px;padding:9px 10px;font-size:13px;line-height:1.45;transition:opacity .25s;border-left:4px solid}
+.lesson .t{font-family:var(--serif);font-size:12px;color:var(--ink-soft)}
+.lesson .g{font-weight:900;font-size:13.5px;display:block;margin:2px 0;overflow-wrap:anywhere}
+.lesson .w{font-size:11px;font-weight:900}
+.lesson .lim{display:inline-block;font-size:10px;font-weight:900;background:#fff;color:var(--rose-deep);border-radius:6px;padding:0 5px;margin-left:3px}
+.lesson .tc{font-size:11px;font-weight:700;color:var(--ink-soft)}
+.lesson.kids{background:#FFF0E8;border-color:#F4A27D}
+.lesson.sho{background:#FFEAF1;border-color:var(--rose)}
+.lesson.shochu{background:#F3EDFF;border-color:var(--lav)}
+.lesson.all{background:#FFF6E3;border-color:var(--gold)}
+.lesson.adult{background:#F4F2F5;border-color:#B7AABD}
+.lesson.dim{opacity:.18}
+.rest-day{display:grid;place-items:center;text-align:center;padding:20px 8px;font-weight:700;color:var(--ink-soft);font-size:13px;min-height:120px}
+.legend{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:22px;font-size:12px;font-weight:700;color:var(--ink-soft)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:5px}
+.sched-note{text-align:center;margin-top:10px;font-size:12px;color:var(--ink-soft);font-weight:700}
+@media (max-width:980px){
+  .week{grid-template-columns:1fr}
+  .day{display:grid;grid-template-columns:54px 1fr}
+  .day-head{display:grid;place-items:center}
+  .day-body{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  .rest-day{min-height:0;padding:12px}
+  .lesson.dim{display:none}
+}
+
+/* ---------- teachers ---------- */
+.teachers{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.teacher{text-align:center;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+.teacher:hover{transform:translateY(-4px);box-shadow:6px 6px 0 var(--rose)}
+.teacher-body{padding:16px 18px 22px}
+/* 写真は縦長（約 1:3.3）。顔と名前ロゴが入る上の方を切り出して表示 */
+.t-photo{
+  aspect-ratio:3/4;display:grid;place-items:center;background-color:#BDBDBD;
+  background-size:cover;background-position:center 18%;transition:background-position .4s;
+  font-family:var(--serif);font-size:56px;color:#fff;
+}
+.teacher:hover .t-photo{background-position:center 24%}
+.teacher h3{font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:.08em}
+.teacher .role{font-size:12px;font-weight:900;color:var(--rose)}
+.teacher .day-chip{display:inline-block;margin:8px 0 10px;font-size:11px;font-weight:900;background:var(--blush);color:var(--rose-deep);border-radius:999px;padding:2px 12px}
+.teacher p{font-size:13px;font-weight:700;color:var(--ink-soft);text-align:left}
+@media (max-width:900px){.teachers{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.teachers{grid-template-columns:1fr}}
+
+/* ---------- trial ---------- */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.flow-step{background:#fff;border-radius:var(--radius);padding:28px 22px;box-shadow:var(--shadow-sm);position:relative}
+.flow-step .n{font-family:var(--serif);font-size:46px;line-height:1}
+.flow-step h3{font-size:17px;font-weight:900;margin:10px 0 6px}
+.flow-step p{font-size:13px;font-weight:700;color:var(--ink-soft)}
+.trial-price{text-align:center;margin-bottom:40px;display:flex;justify-content:center;flex-wrap:wrap;gap:16px}
+.price-pill{background:#fff;border-radius:999px;padding:12px 32px;box-shadow:var(--shadow-sm);font-weight:900}
+.price-pill b{font-family:var(--serif);font-weight:400;font-size:38px;margin:0 2px}
+.bring{
+  margin-top:36px;background:rgba(255,255,255,.75);border:1.5px dashed var(--pink);border-radius:var(--radius);padding:22px 26px;
+  display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:center;
+}
+.bring h3{font-weight:900;font-size:16px}
+.bring ul{display:flex;flex-wrap:wrap;gap:10px;list-style:none;justify-content:center}
+.bring li{background:#fff;border-radius:999px;padding:5px 16px;font-weight:700;font-size:14px;box-shadow:0 3px 10px rgba(200,69,111,.08)}
+.trial-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:40px}
+@media (max-width:900px){.flow{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.flow{grid-template-columns:1fr}}
+
+/* ---------- parents ---------- */
+.parents-intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center;margin-bottom:56px}
+.p-photo-wrap{position:relative;aspect-ratio:4/5;max-width:380px;width:100%;justify-self:center}
+.parents-arch{background-image:url(images/lesson.jpg),linear-gradient(160deg,#E6D9FF,#FFD3E1)}
+.parents-intro h3{font-size:clamp(21px,2.8vw,28px);font-weight:900;line-height:1.6;margin-bottom:18px}
+.parents-intro p{font-weight:700;color:var(--ink-soft);margin-bottom:14px;font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:48px}
+.stat{text-align:center;background:#fff;border-radius:var(--radius);padding:24px 10px;box-shadow:var(--shadow-sm)}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(26px,3.4vw,36px);line-height:1.2}
+.stat span{font-size:12px;font-weight:700;color:var(--ink-soft)}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.point{border-radius:var(--radius);padding:26px;background:#fff;box-shadow:var(--shadow-sm)}
+.point .num{font-family:var(--serif);font-size:28px;color:var(--rose);line-height:1}
+.point h4{font-size:17px;font-weight:900;margin:10px 0 6px}
+.point p{font-size:13px;font-weight:700;color:var(--ink-soft)}
+@media (max-width:900px){.parents-intro{grid-template-columns:1fr}.points{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.points{grid-template-columns:1fr}}
+
+/* ---------- price ---------- */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+.price-card h3{padding:16px 22px;font-weight:900;font-size:16px;letter-spacing:.06em}
+.p-kids h3{background:#FFF0E8;color:#D06A42}
+.p-sho h3{background:var(--blush);color:var(--rose-deep)}
+.p-free h3{background:var(--ink);color:#fff}
+.price-card table{width:100%;border-collapse:collapse}
+.price-card td{padding:14px 22px;border-bottom:1px solid #F6E6EC;font-weight:700;font-size:14px}
+.price-card tr:last-child td{border-bottom:none}
+.price-card td:last-child{text-align:right;font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:.03em}
+.price-card td small{display:block;font-family:'Zen Maru Gothic';font-size:11px;color:var(--rose);font-weight:900}
+.price-card .card-note{padding:12px 22px;font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--bg)}
+.fees{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.fee{border-radius:var(--radius);padding:22px 26px;background:var(--bg)}
+.fee h4{font-weight:900;font-size:15px;margin-bottom:6px}
+.fee p{font-weight:700;font-size:14px}
+.fee s{color:var(--ink-soft)}
+.fee .free{color:var(--rose);font-weight:900;font-size:17px}
+.price-notes{margin-top:20px;font-size:12px;font-weight:700;color:var(--ink-soft);text-align:center}
+@media (max-width:900px){.price-grid{grid-template-columns:1fr}.fees{grid-template-columns:1fr}}
+
+/* ---------- faq ---------- */
+.faq{max-width:800px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border-radius:22px;box-shadow:var(--shadow-sm);overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:18px 56px 18px 22px;font-weight:900;font-size:15px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q.";font-family:var(--serif);color:var(--rose);margin-right:10px;font-size:18px}
+.faq summary::after{
+  content:"+";position:absolute;right:18px;top:50%;translate:0 -50%;width:28px;height:28px;border-radius:50%;
+  background:var(--blush);color:var(--rose-deep);display:grid;place-items:center;font-weight:900;transition:rotate .25s;
+}
+.faq details[open] summary::after{rotate:45deg}
+.faq .a{padding:0 22px 20px 52px;font-weight:700;color:var(--ink-soft);font-size:14px}
+
+/* ---------- access ---------- */
+.access{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.access-info,.map{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+.access-info{padding:32px}
+.access-info .big{font-weight:900;font-size:clamp(20px,2.6vw,26px);margin-bottom:16px}
+.access-info dl{display:grid;gap:14px;font-weight:700}
+.access-info dt{font-family:var(--serif);font-weight:400;font-size:14px;color:var(--rose);letter-spacing:.1em}
+.access-info dd{font-size:14px}
+.access-info dd small{display:block;color:var(--ink-soft);font-size:12px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block;filter:saturate(.85)}
+@media (max-width:820px){.access{grid-template-columns:1fr}}
+
+/* ---------- contact / footer ---------- */
+.contact{text-align:center;padding-top:40px}
+.contact-box{
+  position:relative;max-width:860px;margin:0 auto;color:#fff;border-radius:20px;overflow:hidden;
+  background:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1.5px) 0 0/14px 14px,radial-gradient(500px 300px at 100% 0%,rgba(255,79,139,.5),transparent 70%),var(--black);box-shadow:10px 10px 0 var(--rose);padding:56px 24px;
+}
+.contact-box .sec-en{-webkit-text-stroke-color:#fff}
+.contact-box h2{display:inline-block;font-weight:900;font-size:clamp(20px,3vw,28px);margin:-10px 0 16px;letter-spacing:.06em;background:var(--rose);padding:2px 16px;transform:rotate(-1.5deg)}
+.contact-box p{font-weight:700;margin-bottom:28px;opacity:.95}
+.contact-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.contact-sub{margin-top:24px;font-size:13px;font-weight:700}
+.contact-sub a{color:#fff}
+footer{background:var(--black);color:#E9E4EC;padding:56px 0 110px;font-size:13px;margin-top:96px}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
+footer h4{font-weight:900;font-size:14px;margin-bottom:10px;color:var(--rose);letter-spacing:.06em}
+footer ul{list-style:none;display:grid;gap:6px}
+footer a{text-decoration:none;opacity:.9}
+footer a:hover{opacity:1;text-decoration:underline}
+.copy{margin-top:40px;text-align:center;opacity:.6;font-size:11px;font-family:var(--serif);letter-spacing:.1em}
+@media (max-width:820px){.foot{grid-template-columns:1fr}}
+
+/* ---------- mobile CTA bar ---------- */
+.cta-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(20,18,24,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.1);
+}
+.cta-bar .btn{flex:1;padding:11px 8px;font-size:13px}
+@media (max-width:820px){.cta-bar{display:flex}}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="ダンススタジオBASIS 豊中服部教室 トップへ">
+      <img src="images/logo.png" alt="">
+      <span class="logo-text"><b>BASIS</b><small>ダンススタジオ 豊中服部教室</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#concept">BASISのこだわり</a></li>
+      <li><a href="#genre">クラス</a></li>
+      <li><a href="#schedule">スケジュール</a></li>
+      <li><a href="#teachers">先生</a></li>
+      <li><a href="#trial">体験レッスン</a></li>
+      <li><a href="#price">料金</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+    <a class="btn btn-main btn-sm" href="https://dance-basis.web.app/booking/13" target="_blank" rel="noopener">体験を予約</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <span class="spark" style="top:14%;left:6%;font-size:22px">✦</span>
+  <span class="spark" style="top:70%;left:46%;font-size:14px;animation-delay:1s">✦</span>
+  <span class="spark" style="top:20%;left:52%;font-size:16px;animation-delay:2s">✦</span>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-script">Let's dance!</p>
+      <span class="hero-badge">3歳から通える K-POP &amp; ストリートダンススクール</span>
+      <h1>
+        <span class="en">STREET DANCE<br>FROM THE BASICS</span>
+        はじめてでも、<br>
+        <span class="grad-text">基礎からしっかり</span><br>
+        上手くなる。
+      </h1>
+      <p class="hero-lead">
+        やさしく、でも本格的に。<br>
+        リズムのとり方から一つずつ積み上げて、<br>
+        3歳から中学生まで、ずっと伸び続けられるスクールです。
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="https://dance-basis.web.app/booking/13" target="_blank" rel="noopener">体験レッスンを予約する</a>
+        <a class="btn btn-ghost" href="#quiz">ぴったりクラス診断</a>
+      </div>
+      <ul class="hero-points">
+        <li><b>3歳〜</b>はじめられる</li>
+        <li><b>9割+</b>初心者スタート</li>
+        <li><b>1分</b>服部天神駅から</li>
+      </ul>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="arch-frame"></div>
+      <div class="arch hero-arch"></div>
+      <span class="tape"></span>
+      <span class="chip-float cf1">K-POP</span>
+      <span class="chip-float cf2">HIP HOP</span>
+      <span class="chip-float cf3">BREAK</span>
+      <span class="chip-float jp cf4">3歳からOK!</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-inner">
+    <span>K-POP</span><i>✦</i><span>Hip Hop</span><i>✦</i><span>Street Jazz</span><i>✦</i><span>Girls Hip Hop</span><i>✦</i><span>Lock</span><i>✦</i><span>Break</span><i>✦</i><span>Kids Dance</span><i>✦</i><span>Basic Lesson</span><i>✦</i>
+    <span>K-POP</span><i>✦</i><span>Hip Hop</span><i>✦</i><span>Street Jazz</span><i>✦</i><span>Girls Hip Hop</span><i>✦</i><span>Lock</span><i>✦</i><span>Break</span><i>✦</i><span>Kids Dance</span><i>✦</i><span>Basic Lesson</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ===== CONCEPT ===== -->
+<section id="concept">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Our Promise</span>
+      <h2>BASISの3つのこだわり</h2>
+      <p>「やさしい」と「本格的」を、どちらもあきらめない。</p>
+    </div>
+    <div class="concept">
+      <div class="c-card reveal">
+        <div class="c-num grad-text">01</div>
+        <h3>初心者にやさしい</h3>
+        <span class="tag">9割以上が初心者からスタート</span>
+        <p>はじめての子も、体がかたい子も大丈夫。先生が一人ひとりの様子を見ながら、できるまでていねいに教えます。「楽しい！」と思える気持ちを何より大切にしています。</p>
+      </div>
+      <div class="c-card reveal">
+        <div class="c-num grad-text">02</div>
+        <h3>基礎を徹底的に</h3>
+        <span class="tag">一生ものの「土台」をつくる</span>
+        <p>振付をおぼえるだけでなく、リズムのとり方・体の使い方など、どんなダンスにも通じる基礎からしっかり積み上げます。基礎があるから、上達が速く、ずっと伸び続けられます。</p>
+      </div>
+      <div class="c-card reveal">
+        <div class="c-num grad-text">03</div>
+        <h3>3歳から長く続けられる</h3>
+        <span class="tag">キッズ → 小学生 → 中学生</span>
+        <p>3歳のキッズクラスから、小学生・中学生まで年齢別にクラスが分かれています。成長に合わせてステップアップできるので、同じ場所で長く安心して通えます。</p>
+      </div>
+    </div>
+    <div class="basics reveal">
+      <h3><small>Basic Training</small>レッスンでくり返し<br>大切にしている基礎</h3>
+      <ul>
+        <li>リズムのとり方</li><li>アイソレーション</li><li>基本ステップ</li><li>体幹・姿勢</li><li>音のとり方・表現力</li><li>ストレッチ・柔軟</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROADMAP ===== -->
+<section id="growth" class="dark">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Growth Step</span>
+      <h2>3歳からの成長ステップ</h2>
+      <p>年齢と上達に合わせて、一歩ずつ。</p>
+    </div>
+    <div class="road">
+      <div class="r-step reveal">
+        <div class="r-dot"><div><span>step</span><b class="grad-text">1</b></div></div>
+        <div class="r-box"><span class="r-age">3〜6歳</span><h3>キッズクラス</h3><p>音楽に合わせて体を動かす楽しさから。遊びの中で、リズム感と「みんなの前で踊る」自信を育てます。</p></div>
+      </div>
+      <div class="r-step reveal">
+        <div class="r-dot"><div><span>step</span><b class="grad-text">2</b></div></div>
+        <div class="r-box"><span class="r-age">小学生</span><h3>ジャンルの基礎</h3><p>K-POP・HIPHOP・JAZZなど好きなジャンルで、ステップやアイソレーションなどの基礎をしっかり身につけます。</p></div>
+      </div>
+      <div class="r-step reveal">
+        <div class="r-dot"><div><span>step</span><b class="grad-text">3</b></div></div>
+        <div class="r-box"><span class="r-age">小学生〜中学生</span><h3>表現力をみがく</h3><p>基礎の上に振付・表現力を重ねて、年間発表会やイベントで、ステージに立つ経験を積みます。</p></div>
+      </div>
+      <div class="r-step reveal">
+        <div class="r-dot"><div><span>step</span><b>4</b></div></div>
+        <div class="r-box"><span class="r-age">さらに上へ</span><h3>大会・コンテストへ</h3><p>「DREAM GATE」や「SUPER KIDS」の全国大会に出場するチームも。上を目指したい子をしっかり応援します。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GENRES ===== -->
+<section id="genre">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Our Classes</span>
+      <h2>どのダンスがすき？</h2>
+      <p>気になるクラスを見つけたら、動画をチェックして体験へ！</p>
+    </div>
+    <div class="genres">
+      <article class="genre g-kids feature reveal">
+        <div class="genre-top"><span class="genre-name">Kids Dance</span><span class="genre-kana">キッズダンス</span></div>
+        <div class="genre-body">
+          <p class="quote">3歳から、はじめてのダンス。</p>
+          <p>3〜6歳（未就学児）のクラス。音楽に合わせて体を動かす楽しさを感じながら、リズム感と基本の動きを自然に身につけます。</p>
+          <div class="genre-foot"><span class="chip star">3歳からOK</span><a class="video" href="https://www.youtube.com/watch?v=nlOiJKASSUs" target="_blank" rel="noopener">▶ 動画を見る</a></div>
+        </div>
+      </article>
+      <article class="genre g-base feature reveal">
+        <div class="genre-top"><span class="genre-name">Basic</span><span class="genre-kana">ダンス基礎</span></div>
+        <div class="genre-body">
+          <p class="quote">すべてのダンスの土台をつくる。</p>
+          <p>どのジャンルにも役立つ基本の動きを集中して練習するクラス。ほかのクラスと組み合わせると、上達がぐんと速くなります。</p>
+          <div class="genre-foot"><span class="chip">年齢制限なし</span><span class="chip">土曜日</span></div>
+        </div>
+      </article>
+      <article class="genre g-kpop reveal">
+        <div class="genre-top"><span class="genre-name">K-POP</span><span class="genre-kana">ケーポップ</span></div>
+        <div class="genre-body">
+          <p class="quote">憧れのアイドルみたいに。</p>
+          <p>はやりのK-POPの曲で、完コピやオリジナルの振付にチャレンジ。BASISで一番人気のクラスです。</p>
+          <div class="genre-foot"><span class="chip">小学生</span><span class="chip">中学生</span><a class="video" href="https://www.youtube.com/watch?v=RaWE72YHX9M" target="_blank" rel="noopener">▶ 動画を見る</a></div>
+        </div>
+      </article>
+      <article class="genre g-girls reveal">
+        <div class="genre-top"><span class="genre-name">Girls Hip Hop</span><span class="genre-kana">ガールズヒップホップ</span></div>
+        <div class="genre-body">
+          <p class="quote">かわいく、かっこよく。</p>
+          <p>女の子だけのクラスで、かわいい系もかっこいい系も。はずかしがり屋さんも安心してはじめられます。</p>
+          <div class="genre-foot"><span class="chip">小学生</span><span class="chip">中学生</span><span class="chip girls">女の子限定</span><a class="video" href="https://www.youtube.com/watch?v=t7RKkAeiqAU" target="_blank" rel="noopener">▶ 動画を見る</a></div>
+        </div>
+      </article>
+      <article class="genre g-jazz reveal">
+        <div class="genre-top"><span class="genre-name">Street Jazz</span><span class="genre-kana">ストリートジャズ</span></div>
+        <div class="genre-body">
+          <p class="quote">しなやかで、エレガントに。</p>
+          <p>手足をきれいに見せる動きや柔軟性をみがきます。バレエや新体操をしている子にも人気です。</p>
+          <div class="genre-foot"><span class="chip">小学生</span><span class="chip">中学生</span><span class="chip girls">女の子限定</span></div>
+        </div>
+      </article>
+      <article class="genre g-hiphop reveal">
+        <div class="genre-top"><span class="genre-name">Hip Hop</span><span class="genre-kana">ヒップホップ</span></div>
+        <div class="genre-body">
+          <p class="quote">リズムにのって、クールに。</p>
+          <p>ダンスの基本がぎゅっとつまったジャンル。どんなダンスにも役立つリズムのとり方が身につきます。</p>
+          <div class="genre-foot"><span class="chip">小学生</span><span class="chip">中学生</span><a class="video" href="https://www.youtube.com/watch?v=xlgJAfkkxZg" target="_blank" rel="noopener">▶ 動画を見る</a></div>
+        </div>
+      </article>
+      <article class="genre g-lock reveal">
+        <div class="genre-top"><span class="genre-name">Lock</span><span class="genre-kana">ロック</span></div>
+        <div class="genre-body">
+          <p class="quote">ピタッと止まって、ポーズが決まる。</p>
+          <p>明るくファンキーな音楽で、見ている人も笑顔になるダンス。元気いっぱいの子にぴったり。</p>
+          <div class="genre-foot"><span class="chip">小学生</span><span class="chip">中学生</span><span class="chip">大人</span><a class="video" href="https://www.youtube.com/watch?v=rpKc6djFi_E" target="_blank" rel="noopener">▶ 動画を見る</a></div>
+        </div>
+      </article>
+      <article class="genre g-break reveal">
+        <div class="genre-top"><span class="genre-name">Break</span><span class="genre-kana">ブレイクダンス</span></div>
+        <div class="genre-body">
+          <p class="quote">回る、とぶ、アクロバット。</p>
+          <p>床でスピーディーに動いたり、回ったり。オリンピック種目にもなった迫力のダンスです。</p>
+          <div class="genre-foot"><span class="chip">年齢制限なし</span><a class="video" href="https://www.youtube.com/watch?v=aYgK6ZcUi-g" target="_blank" rel="noopener">▶ 動画を見る</a></div>
+        </div>
+      </article>
+      <article class="genre g-waack reveal">
+        <div class="genre-top"><span class="genre-name">Soul &amp; Waack</span><span class="genre-kana">ソウル＆ワック</span></div>
+        <div class="genre-body">
+          <p class="quote">うでをしなやかに、華やかに。</p>
+          <p>腕をすばやく振る動きとポーズで魅せる、女性らしさが光るダンス。中学生〜大人のクラスです。</p>
+          <div class="genre-foot"><span class="chip">一般</span><a class="video" href="https://www.youtube.com/watch?v=_QIeDhi0imI" target="_blank" rel="noopener">▶ 動画を見る</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUIZ ===== -->
+<section id="quiz" class="quiz-sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Class Check</span>
+      <h2>ぴったりクラス診断</h2>
+      <p>2つの質問にこたえるだけで、おすすめのクラスがわかるよ</p>
+    </div>
+    <div class="quiz reveal" id="quizBox">
+      <div class="q-step active" data-step="1">
+        <div class="q-num">Question 1 / 2</div>
+        <div class="q-title">いま、何歳・何年生？</div>
+        <div class="q-opts">
+          <button class="q-opt" data-k="age" data-v="kids">3〜6歳<small>年長さんまで</small></button>
+          <button class="q-opt" data-k="age" data-v="low">小学1〜3年生</button>
+          <button class="q-opt" data-k="age" data-v="high">小学4〜6年生</button>
+          <button class="q-opt" data-k="age" data-v="jh">中学生</button>
+        </div>
+      </div>
+      <div class="q-step" data-step="2">
+        <div class="q-num">Question 2 / 2</div>
+        <div class="q-title">どんなダンスがやってみたい？</div>
+        <div class="q-opts">
+          <button class="q-opt" data-k="style" data-v="kpop">アイドルみたいに<small>K-POPの曲でおどりたい</small></button>
+          <button class="q-opt" data-k="style" data-v="cute">おしゃれに、きれいに<small>かわいい・しなやかな動きがすき</small></button>
+          <button class="q-opt" data-k="style" data-v="hiphop">かっこよく<small>ヒップホップ・ラップの曲がすき</small></button>
+          <button class="q-opt" data-k="style" data-v="fun">元気いっぱいに<small>ポーズをピタッと決めたい</small></button>
+          <button class="q-opt" data-k="style" data-v="acro">アクロバットがしたい<small>回ったり、とんだりしたい</small></button>
+        </div>
+        <button class="q-back" data-back>← もどる</button>
+      </div>
+      <div class="q-step" data-step="3">
+        <div class="q-num">Result</div>
+        <div class="q-title" id="qResultTitle">あなたにおすすめのクラスは…</div>
+        <div class="q-result-list" id="qResult"></div>
+        <a class="btn btn-main" href="https://dance-basis.web.app/booking/13" target="_blank" rel="noopener">このクラスを体験予約する</a>
+        <div><button class="q-back" data-restart>もう一回やる</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCHEDULE ===== -->
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Schedule</span>
+      <h2>1週間のスケジュール</h2>
+      <p>学校のあとに通える、夕方のクラスがいっぱい</p>
+    </div>
+    <div class="filters" role="group" aria-label="対象で絞り込み">
+      <button class="filter" data-f="all-view" aria-pressed="true">すべて</button>
+      <button class="filter" data-f="kids" aria-pressed="false">キッズ（3〜6歳）</button>
+      <button class="filter" data-f="sho" aria-pressed="false">小学生</button>
+      <button class="filter" data-f="shochu" aria-pressed="false">小学生〜中学生</button>
+      <button class="filter" data-f="adult" aria-pressed="false">一般・大人</button>
+    </div>
+    <div class="week" id="week"></div>
+    <div class="legend">
+      <span><i style="background:#F4A27D"></i>キッズ（3〜6歳）</span>
+      <span><i style="background:var(--rose)"></i>小学生</span>
+      <span><i style="background:var(--lav)"></i>小学生〜中学生</span>
+      <span><i style="background:var(--gold)"></i>年齢制限なし</span>
+      <span><i style="background:#B7AABD"></i>一般・大人</span>
+    </div>
+    <p class="sched-note">※ クラスの内容・時間・担当の先生は変わることがあります。最新の情報は予約ページでご確認ください。</p>
+  </div>
+</section>
+
+<!-- ===== TEACHERS ===== -->
+<section id="teachers" class="soft">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Teachers</span>
+      <h2>服部教室の先生たち</h2>
+      <p>全国大会や世界の舞台を経験した先生が、基礎からていねいに教えます</p>
+    </div>
+    <div class="teachers" id="teacherList"></div>
+  </div>
+</section>
+
+<!-- ===== TRIAL ===== -->
+<section id="trial">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Trial Lesson</span>
+      <h2>体験レッスンの流れ</h2>
+      <p>はじめての方も、3歳のお子さまも大歓迎です</p>
+    </div>
+    <div class="trial-price reveal">
+      <div class="price-pill">小学生以上 <b class="grad-text">1,100</b>円</div>
+      <div class="price-pill">キッズ（3〜6歳） <b class="grad-text">550</b>円</div>
+    </div>
+    <div class="flow">
+      <div class="flow-step reveal"><div class="n grad-text">01</div><h3>WEB・LINEで予約</h3><p>受けたいクラスと日にちをえらんで予約。お電話でもOKです。</p></div>
+      <div class="flow-step reveal"><div class="n grad-text">02</div><h3>スタジオへ</h3><p>服部天神駅から徒歩1分。受付で体験の手続きをして、お着がえ。</p></div>
+      <div class="flow-step reveal"><div class="n grad-text">03</div><h3>レッスン</h3><p>先生がていねいに教えるので、はじめてでも大丈夫。保護者の方の見学もOK。</p></div>
+      <div class="flow-step reveal"><div class="n grad-text">04</div><h3>ゆっくりご相談</h3><p>レッスン後にお話しします。その日に入会を決めなくても大丈夫です。</p></div>
+    </div>
+    <div class="bring reveal">
+      <h3>もちもの</h3>
+      <ul><li>動きやすい服</li><li>室内シューズ（上ばきOK）</li><li>タオル</li><li>飲みもの</li></ul>
+    </div>
+    <div class="trial-cta">
+      <a class="btn btn-main" href="https://dance-basis.web.app/booking/13" target="_blank" rel="noopener">WEBで体験を予約する</a>
+      <a class="btn btn-line" href="https://line.me/R/ti/p/@226tifen" target="_blank" rel="noopener">LINEで相談する</a>
+      <a class="btn" href="tel:0668429410">電話する 06-6842-9410</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARENTS ===== -->
+<section id="parents" class="soft">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">For Parents</span>
+      <h2>保護者のみなさまへ</h2>
+    </div>
+    <div class="parents-intro">
+      <div class="p-photo-wrap reveal">
+        <div class="arch-frame"></div>
+        <div class="arch parents-arch" role="img" aria-label="レッスン風景"></div>
+      </div>
+      <div class="reveal">
+        <h3>ダンスを通して、<br><span class="grad-text">「自分を表現できる子」</span>に。</h3>
+        <p>BASISは、北摂・豊中で15年以上つづくK-POP＆ストリートダンススクールです。ダンスを「教育のひとつ」と考え、技術だけでなく、表現力や健やかな体と心を育てることを大切にしています。</p>
+        <p>基礎をていねいに積み上げることで「できた！」が増え、それが自信になります。好きなダンスを大勢の前で披露する経験は、学校やその先の社会でも生きる力になると考えています。</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b class="grad-text">1000+</b><span>在籍生徒数</span></div>
+      <div class="stat reveal"><b class="grad-text">9</b><span>北摂エリアの教室数</span></div>
+      <div class="stat reveal"><b class="grad-text">3000</b><span>年間発表会の来場者（約）</span></div>
+      <div class="stat reveal"><b class="grad-text">15+</b><span>年の指導実績</span></div>
+    </div>
+    <div class="points">
+      <div class="point reveal"><div class="num">01</div><h4>3歳から通える</h4><p>未就学児のキッズクラスから中学生まで、年齢別にクラスが分かれているので、成長に合わせて無理なくステップアップできます。</p></div>
+      <div class="point reveal"><div class="num">02</div><h4>基礎を大切にする指導</h4><p>振付だけでなく、リズムや体の使い方といった基礎からしっかり指導。土曜日には基礎だけを集中して練習するクラスもあります。</p></div>
+      <div class="point reveal"><div class="num">03</div><h4>チケット制で両立しやすい</h4><p>受けた分だけ払うチケット制で、有効期限もありません。ほかの習い事や塾がある子も、自分のペースで通えます。</p></div>
+      <div class="point reveal"><div class="num">04</div><h4>女の子限定クラスも</h4><p>ストリートJAZZやガールズHIPHOPには女の子だけのクラスがあり、恥ずかしがり屋さんでも安心です。</p></div>
+      <div class="point reveal"><div class="num">05</div><h4>目標になる舞台がある</h4><p>年間発表会やファッションショー、地域イベントへの出演など、練習の成果を披露する機会が毎年あります。</p></div>
+      <div class="point reveal"><div class="num">06</div><h4>駅から徒歩1分</h4><p>阪急宝塚線「服部天神」駅を降りてすぐ。夕方のクラスでも送り迎えしやすい立地です。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICE ===== -->
+<section id="price" class="white">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Price</span>
+      <h2>料金</h2>
+      <p>チケット制と、何回でも通える受け放題プランがあります</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card p-kids reveal">
+        <h3>チケット制｜キッズクラス</h3>
+        <table>
+          <tr><td>1枚</td><td>990円</td></tr>
+          <tr><td>4枚</td><td>3,400円<small>1枚 850円</small></td></tr>
+          <tr><td>9枚</td><td>6,900円<small>約1枚おトク</small></td></tr>
+        </table>
+      </div>
+      <div class="price-card p-sho reveal">
+        <h3>チケット制｜小学生以上</h3>
+        <table>
+          <tr><td>1枚</td><td>1,980円</td></tr>
+          <tr><td>4枚</td><td>6,800円<small>1枚 1,700円</small></td></tr>
+          <tr><td>9枚</td><td>13,800円<small>約1枚おトク</small></td></tr>
+        </table>
+      </div>
+      <div class="price-card p-free reveal">
+        <h3>受け放題｜週2回以上ならおトク</h3>
+        <table>
+          <tr><td>キッズ</td><td>6,600円<small>／1ヶ月</small></td></tr>
+          <tr><td>小学生以上</td><td>13,200円<small>／1ヶ月</small></td></tr>
+        </table>
+        <div class="card-note">ジャンル＋ダンス基礎など、組み合わせて通いたい子におすすめ</div>
+      </div>
+    </div>
+    <div class="fees">
+      <div class="fee reveal">
+        <h4>入会金</h4>
+        <p><s>3,300円</s>　→　<span class="free">ただいま無料キャンペーン中！</span></p>
+        <p style="font-size:12px;color:var(--ink-soft)">（入退館システム事務手数料）</p>
+      </div>
+      <div class="fee reveal">
+        <h4>年会費（毎年4月更新）</h4>
+        <p>4〜8月入会 3,300円 ／ 9〜12月入会 2,200円 ／ 1〜3月入会 1,100円</p>
+      </div>
+    </div>
+    <p class="price-notes">※ チケットに有効期限はありません。※ 換金・払い戻しはできません。※ 年会費未払い・退会後はチケットをご利用いただけません。</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Q&amp;A</span>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>3歳でもレッスンについていけますか？</summary><div class="a">はい。キッズクラスは3〜6歳の未就学児向けで、遊びの要素を取り入れながら、音楽に合わせて体を動かすところからはじめます。はじめは保護者の方と離れるのが不安な子も、少しずつ慣れていくので安心してください。</div></details>
+      <details class="reveal"><summary>ダンスをやったことがなくても大丈夫？</summary><div class="a">大丈夫です！ BASISの生徒の9割以上が初心者からのスタートです。基礎から一つずつていねいに教えるので、安心して参加してください。</div></details>
+      <details class="reveal"><summary>楽しいだけでなく、ちゃんと上手くなりますか？</summary><div class="a">はい。BASISでは振付をおぼえるだけでなく、リズムのとり方や体の使い方などの基礎をくり返し練習します。基礎がしっかりしている分、上達が速く、学年が上がっても伸び続けられます。大会やコンテストに挑戦するチームもあります。</div></details>
+      <details class="reveal"><summary>体がかたくてもできますか？</summary><div class="a">できます。ストレッチもレッスンに取り入れているので、続けるうちに自然と柔軟性もアップしていきます。</div></details>
+      <details class="reveal"><summary>友だちと一緒に体験できますか？</summary><div class="a">もちろんOKです！ お友だちと一緒に予約してください。1人で参加している子もたくさんいます。</div></details>
+      <details class="reveal"><summary>保護者はレッスンを見学できますか？</summary><div class="a">見学いただけます。体験レッスンは1人1回までですが、見学は何度でも大歓迎です。お子さまに合うクラスをゆっくり探してください。</div></details>
+      <details class="reveal"><summary>体験の日に入会を決めないといけませんか？</summary><div class="a">いいえ、その日に決めなくて大丈夫です。お子さまとご家族で納得いくまでご検討ください。</div></details>
+      <details class="reveal"><summary>送り迎えの車はとめられますか？</summary><div class="a">専用駐車場はありません。近くのコインパーキングをご利用ください。自転車はスタジオ前にはとめられないので「服部天神駅東第1自転車駐輪場」をご利用ください。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACCESS ===== -->
+<section id="access" class="soft">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">Access</span>
+      <h2>アクセス</h2>
+    </div>
+    <div class="access">
+      <div class="access-info reveal">
+        <p class="big">服部天神駅から <span class="grad-text">徒歩1分</span></p>
+        <dl>
+          <div><dt>ADDRESS</dt><dd>〒561-0851 大阪府豊中市服部元町1丁目9-20 ユミヤビル B1</dd></div>
+          <div><dt>TRAIN</dt><dd>阪急宝塚線「服部天神」駅より徒歩1分</dd></div>
+          <div><dt>CAR</dt><dd>国道176号線「服部天神前」交差点を西へすぐ<small>※専用駐車場はありません。近くのコインパーキングをご利用ください。</small></dd></div>
+          <div><dt>BICYCLE</dt><dd>「服部天神駅東第1自転車駐輪場」をご利用ください<small>※スタジオ前への駐輪はできません。</small></dd></div>
+          <div><dt>TEL</dt><dd><a href="tel:0668429410">06-6842-9410</a></dd></div>
+        </dl>
+      </div>
+      <div class="map reveal">
+        <iframe title="ダンススタジオBASIS 豊中服部教室の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E6%9C%8D%E9%83%A8%E5%85%83%E7%94%BA1%E4%B8%81%E7%9B%AE9-20&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <span class="sec-en">Let's Dance</span>
+      <h2>まずは体験レッスンへ</h2>
+      <p>3歳から、はじめてでも大丈夫。わからないことは気軽にご相談ください。</p>
+      <div class="contact-btns">
+        <a class="btn" href="https://dance-basis.web.app/booking/13" target="_blank" rel="noopener">WEBで体験を予約</a>
+        <a class="btn btn-line" href="https://line.me/R/ti/p/@226tifen" target="_blank" rel="noopener">LINEで相談</a>
+        <a class="btn" href="tel:0668429410">06-6842-9410</a>
+      </div>
+      <p class="contact-sub">メール：<a href="mailto:dancestudiodlb@gmail.com">dancestudiodlb@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>ダンススタジオBASIS 豊中服部教室</h4>
+        <p>〒561-0851 大阪府豊中市服部元町1丁目9-20 ユミヤビル B1<br>TEL 06-6842-9410</p>
+      </div>
+      <div>
+        <h4>SNS・動画</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@BasisDance" target="_blank" rel="noopener">YouTube（BASIS公式）</a></li>
+          <li><a href="https://www.instagram.com/dancestudio_dlb" target="_blank" rel="noopener">Instagram（服部教室）</a></li>
+          <li><a href="https://www.instagram.com/danceschool_basis/" target="_blank" rel="noopener">Instagram（BASIS公式）</a></li>
+          <li><a href="https://www.tiktok.com/@basis.channel" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://line.me/R/ti/p/@226tifen" target="_blank" rel="noopener">LINE公式アカウント</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>ダンススクールBASIS</h4>
+        <ul>
+          <li><a href="https://www.dance-basis.com/" target="_blank" rel="noopener">BASIS本校サイト</a></li>
+          <li><a href="https://www.dance-basis.com/schedule.html" target="_blank" rel="noopener">北摂9教室のスケジュール</a></li>
+          <li><a href="https://www.dance-basis.com/system.html" target="_blank" rel="noopener">料金システム・よくある質問</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© BASIS DANCE SCHOOL / BASIS Inc.</p>
+  </div>
+</footer>
+
+<div class="cta-bar">
+  <a class="btn btn-main" href="https://dance-basis.web.app/booking/13" target="_blank" rel="noopener">体験予約</a>
+  <a class="btn btn-line" href="https://line.me/R/ti/p/@226tifen" target="_blank" rel="noopener">LINE</a>
+  <a class="btn" href="tel:0668429410">電話</a>
+</div>
+
+<script>
+/* ===== レッスンデータ（ここを書きかえればスケジュール・診断に反映されます） =====
+   who:   kids=キッズ(3〜6歳) / sho=小学生 / shochu=小学生〜中学生 / all=年齢制限なし / adult=一般・大人
+   style: kpop / hiphop / fun / cute / acro（クラス診断で使います） */
+const LESSONS = [
+  {d:'月', t:'17:05-17:45', g:'キッズダンス',     who:'kids',   tc:'RINKA'},
+  {d:'月', t:'18:00-19:00', g:'K-POP&HIPHOP',     who:'sho',    tc:'RINKA',   style:['kpop','hiphop']},
+  {d:'月', t:'19:15-20:15', g:'K-POP&HIPHOP',     who:'shochu', tc:'RINKA',   style:['kpop','hiphop']},
+  {d:'火', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'NAMIKI'},
+  {d:'火', t:'16:45-17:45', g:'ストリートJAZZ',   who:'sho',    tc:'NAMIKI',  girls:true, style:['cute']},
+  {d:'火', t:'18:00-19:00', g:'ストリートJAZZ',   who:'shochu', tc:'NAMIKI',  girls:true, style:['cute']},
+  {d:'火', t:'19:15-20:15', g:'SOUL&WAACK',       who:'adult',  tc:'SAYUMI'},
+  {d:'火', t:'20:30-21:30', g:'K-POP（ガールズ）', who:'adult',  tc:'HIRAMAI', style:['kpop']},
+  {d:'水', t:'11:45-12:45', g:'K-POP（ボーイズ）', who:'adult',  tc:'HIRAMAI'},
+  {d:'水', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'HIRAMAI'},
+  {d:'水', t:'16:45-17:45', g:'LOCK',             who:'sho',    tc:'HIRAMAI', style:['fun']},
+  {d:'水', t:'18:00-19:00', g:'LOCK',             who:'shochu', tc:'HIRAMAI', style:['fun']},
+  {d:'水', t:'19:15-20:15', g:'LOCK',             who:'adult',  tc:'HIRAMAI', style:['fun']},
+  {d:'水', t:'20:30-22:00', g:'LOCK',             who:'adult',  tc:'HIRAMAI'},
+  {d:'木', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'MINAMI'},
+  {d:'木', t:'16:45-17:45', g:'HIPHOP',           who:'sho',    tc:'MINAMI',  style:['hiphop']},
+  {d:'木', t:'18:00-19:00', g:'HIPHOP',           who:'shochu', tc:'MINAMI',  style:['hiphop']},
+  {d:'金', t:'16:45-17:45', g:"Girl's HIPHOP",    who:'sho',    tc:'MAYU',    girls:true, style:['kpop','cute']},
+  {d:'金', t:'18:00-19:00', g:"Girl's HIPHOP",    who:'shochu', tc:'MAYU',    girls:true, style:['kpop','cute']},
+  {d:'金', t:'19:15-20:15', g:"Girl's HIPHOP",    who:'adult',  tc:'MAYU',    girls:true},
+  {d:'土', t:'10:30-11:30', g:'BREAK',            who:'all',    tc:'HIRO',    style:['acro']},
+  {d:'土', t:'11:45-12:45', g:'ダンス基礎',       who:'all',    tc:'MINAMI'},
+  {d:'土', t:'13:00-14:00', g:'BREAK',            who:'all',    tc:'HIRO',    style:['acro']},
+  {d:'土', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'COCONA'},
+  {d:'土', t:'16:45-17:45', g:'HIPHOP',           who:'sho',    tc:'COCONA',  style:['hiphop']},
+  {d:'土', t:'18:00-19:00', g:'HIPHOP',           who:'shochu', tc:'COCONA',  style:['hiphop']},
+  {d:'土', t:'19:15-21:15', g:'練習会',           who:'all',    tc:'HIRO'},
+];
+
+/* ===== 先生（写真は images/teachers/名前.jpg を置くと表示されます） ===== */
+const TEACHERS = [
+  {n:'RINKA',   r:'K-POP&HIPHOP・キッズ',  c:'#FFB3C8', p:'小学3年生でダンスをはじめ、高校で全国3位に。ヒップホップもジャズもこなすマルチダンサー。'},
+  {n:'NAMIKI',  r:'ストリートJAZZ・キッズ', c:'#C9B3F7', p:'5年生からストリートジャズをはじめ、高校ダンス部で全国大会へ。大阪芸術大学ダンス学科出身。'},
+  {n:'SAYUMI',  r:'SOUL&WAACK',            c:'#F7C99B', p:'老舗コンテスト「TRUE SKOOL」で2度優勝。作品づくりにもこだわる実力派。'},
+  {n:'HIRAMAI', r:'K-POP・LOCK・キッズ',    c:'#A9DCC8', p:'高校ダンス部コーチとして全国大会優勝・世界大会優勝に導いたベテラン。「楽しみながら確実に上達」がモットー。'},
+  {n:'MINAMI',  r:'HIPHOP・キッズ・基礎',   c:'#A9CFF2', p:'高校ダンス部で主要な全国大会をすべて優勝。東京ドームでのアーティストとの共演経験も。'},
+  {n:'MAYU',    r:"Girl's HIPHOP",          c:'#F7A8CF', p:'振付師としてキッズチームを「SUPER KIDS DANCE CONTEST」などの入賞に導く、子どもに大人気の先生。'},
+  {n:'COCONA',  r:'HIPHOP・キッズ',         c:'#F5D38E', p:'土曜日のキッズ・小学生・中学生のHIPHOPクラスを担当。'},
+  {n:'HIRO',    r:'BREAK',                  c:'#BDB2CC', p:'オーストラリア代表として世界大会ベスト8。フットワークのキレは世界レベル！'},
+];
+
+const DAYS = ['月','火','水','木','金','土','日'];
+const WHO = {kids:'キッズ', sho:'小学生', shochu:'小〜中学生', all:'年齢制限なし', adult:'一般'};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const limLabel = l => l.who === 'adult' ? '女性限定' : '女の子限定';
+
+/* ---- スケジュール ---- */
+const week = document.getElementById('week');
+week.innerHTML = DAYS.map(d => {
+  const list = LESSONS.filter(l => l.d === d);
+  const body = list.length
+    ? list.map(l => `<div class="lesson ${l.who}" data-who="${l.who}">
+        <span class="t">${l.t}</span>
+        <span class="g">${esc(l.g)}</span>
+        <span class="w">${WHO[l.who]}${l.girls ? `<span class="lim">${limLabel(l)}</span>` : ''}</span>
+        <div class="tc">${l.tc}</div>
+      </div>`).join('')
+    : '<div class="rest-day">おやすみ<br><small>（イベントがある日も）</small></div>';
+  return `<div class="day"><div class="day-head">${d}</div><div class="day-body">${body}</div></div>`;
+}).join('');
+
+document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.filter').forEach(b => b.setAttribute('aria-pressed', b === btn));
+  const f = btn.dataset.f;
+  week.querySelectorAll('.lesson').forEach(el => {
+    const w = el.dataset.who;
+    // 「年齢制限なし」はキッズ以外のどの絞り込みでも表示
+    const show = f === 'all-view' || w === f || (w === 'all' && f !== 'kids');
+    el.classList.toggle('dim', !show);
+  });
+}));
+
+/* ---- 先生 ---- */
+document.getElementById('teacherList').innerHTML = TEACHERS.map(t => {
+  const days = [...new Set(LESSONS.filter(l => l.tc === t.n).map(l => l.d))].join('・');
+  return `<div class="teacher reveal">
+    <div class="t-photo" role="img" aria-label="${t.n}先生" style="background-image:url(images/teachers/${t.n.toLowerCase()}.jpg)"></div>
+    <div class="teacher-body">
+      <h3>${t.n}</h3>
+      <div class="role">${esc(t.r)}</div>
+      ${days ? `<span class="day-chip">${days}曜日</span>` : ''}
+      <p>${esc(t.p)}</p>
+    </div>
+  </div>`;
+}).join('');
+
+/* ---- 診断 ---- */
+const box = document.getElementById('quizBox');
+const ans = {};
+const show = n => box.querySelectorAll('.q-step').forEach(s => s.classList.toggle('active', s.dataset.step == n));
+box.querySelectorAll('.q-opt').forEach(b => b.addEventListener('click', () => {
+  ans[b.dataset.k] = b.dataset.v;
+  if (b.dataset.k === 'age' && b.dataset.v === 'kids') { ans.style = null; return result(); }
+  if (b.dataset.k === 'age') return show(2);
+  result();
+}));
+box.querySelector('[data-back]').addEventListener('click', () => show(1));
+box.querySelector('[data-restart]').addEventListener('click', () => show(1));
+
+function result() {
+  const groups = {kids:['kids'], low:['sho','all'], high:['sho','shochu','all'], jh:['shochu','adult','all']}[ans.age];
+  const inAge = l => groups.includes(l.who);
+  let hits = LESSONS.filter(l => inAge(l) && (!ans.style || (l.style || []).includes(ans.style)));
+  if (!hits.length) hits = LESSONS.filter(l => inAge(l) && l.style);
+  // 基礎クラスは小学生以上ならいつもおすすめに添える
+  const base = LESSONS.find(l => l.g === 'ダンス基礎');
+  if (ans.age !== 'kids' && base && !hits.includes(base)) hits.push(base);
+  document.getElementById('qResultTitle').textContent =
+    ans.age === 'kids' ? 'キッズダンスがおすすめ！' : 'あなたにおすすめのクラスは…';
+  document.getElementById('qResult').innerHTML = hits.map(l => `
+    <div class="q-result-item">
+      <b>${esc(l.g)}</b>${l.girls ? ` <span class="chip girls">${limLabel(l)}</span>` : ''}${l === base ? ' <span class="chip star">基礎力アップ</span>' : ''}<br>
+      <span>${l.d}曜日 ${l.t}・${WHO[l.who]}・${l.tc}先生</span>
+    </div>`).join('');
+  show(3);
+}
+
+/* ---- スクロールで表示 ---- */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold:.12}) : null;
+document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+</script>
+</body>
+</html>
