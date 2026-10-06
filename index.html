@@ -676,6 +676,7 @@ footer a:hover{opacity:1;text-decoration:underline}
           <button class="q-opt" data-k="age" data-v="low">小学1〜3年生</button>
           <button class="q-opt" data-k="age" data-v="high">小学4〜6年生</button>
           <button class="q-opt" data-k="age" data-v="jh">中学生</button>
+          <button class="q-opt" data-k="age" data-v="hs">高校生以上</button>
         </div>
       </div>
       <div class="q-step" data-step="2">
@@ -1060,8 +1061,9 @@ box.querySelector('[data-back]').addEventListener('click', () => show(1));
 box.querySelector('[data-restart]').addEventListener('click', () => show(1));
 
 function result() {
-  const groups = {kids:['kids'], low:['sho','all'], high:['sho','shochu','all'], jh:['shochu','adult','all']}[ans.age];
-  const inAge = l => groups.includes(l.who);
+  const groups = {kids:['kids'], low:['sho','all'], high:['sho','shochu','all'], jh:['shochu','adult','all'], hs:['adult','all']}[ans.age];
+  // 高校生以上は土曜日のクラスをダンス基礎だけにする
+  const inAge = l => groups.includes(l.who) && !(ans.age === 'hs' && l.d === '土' && l.g !== 'ダンス基礎');
   let hits = LESSONS.filter(l => inAge(l) && (!ans.style || (l.style || []).includes(ans.style)));
   if (!hits.length) hits = LESSONS.filter(l => inAge(l) && l.style);
   // 基礎クラスは小学生以上ならいつもおすすめに添える
