@@ -268,7 +268,9 @@ section{padding:96px 0;position:relative}
 .day:nth-child(6) .day-head{background:var(--rose)}
 .day:nth-child(7) .day-head{background:#CFC9D3;color:var(--ink)}
 .day-body{padding:10px;display:grid;gap:8px;align-content:start}
-.lesson{border-radius:14px;padding:9px 10px;font-size:13px;line-height:1.45;transition:opacity .25s;border-left:4px solid}
+.lesson{display:block;color:inherit;text-decoration:none;border-radius:14px;padding:9px 10px;font-size:13px;line-height:1.45;transition:opacity .25s,transform .2s,box-shadow .2s;border-left:4px solid}
+.lesson:hover{transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.lesson .go{display:block;margin-top:4px;font-size:10.5px;font-weight:900;color:var(--rose-deep)}
 .lesson .t{font-family:var(--serif);font-size:12px;color:var(--ink-soft)}
 .lesson .g{font-weight:900;font-size:13.5px;display:block;margin:2px 0;overflow-wrap:anywhere}
 .lesson .w{font-size:11px;font-weight:900}
@@ -961,33 +963,33 @@ footer a:hover{opacity:1;text-decoration:underline}
    who:   kids=キッズ(3〜6歳) / sho=小学生 / shochu=小学生〜中学生 / all=年齢制限なし / adult=一般・大人
    style: kpop / hiphop / fun / cute / acro（クラス診断で使います） */
 const LESSONS = [
-  {d:'月', t:'17:05-17:45', g:'キッズダンス',     who:'kids',   tc:'RINKA'},
-  {d:'月', t:'18:00-19:00', g:'K-POP&HIPHOP',     who:'sho',    tc:'RINKA',   style:['kpop','hiphop']},
-  {d:'月', t:'19:15-20:15', g:'K-POP&HIPHOP',     who:'shochu', tc:'RINKA',   style:['kpop','hiphop']},
-  {d:'火', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'NAMIKI'},
-  {d:'火', t:'16:45-17:45', g:'ストリートJAZZ',   who:'sho',    tc:'NAMIKI',  girls:true, style:['cute']},
-  {d:'火', t:'18:00-19:00', g:'ストリートJAZZ',   who:'shochu', tc:'NAMIKI',  girls:true, style:['cute']},
-  {d:'火', t:'19:15-20:15', g:'SOUL&WAACK',       who:'adult',  tc:'SAYUMI'},
-  {d:'火', t:'20:30-21:30', g:'K-POP（ガールズ）', who:'adult',  tc:'HIRAMAI', style:['kpop']},
-  {d:'水', t:'11:45-12:45', g:'K-POP（ボーイズ）', who:'adult',  tc:'HIRAMAI'},
-  {d:'水', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'HIRAMAI'},
-  {d:'水', t:'16:45-17:45', g:'LOCK',             who:'sho',    tc:'HIRAMAI', style:['fun']},
-  {d:'水', t:'18:00-19:00', g:'LOCK',             who:'shochu', tc:'HIRAMAI', style:['fun']},
-  {d:'水', t:'19:15-20:15', g:'LOCK',             who:'adult',  tc:'HIRAMAI', style:['fun']},
-  {d:'水', t:'20:30-22:00', g:'LOCK',             who:'adult',  tc:'HIRAMAI'},
-  {d:'木', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'MINAMI'},
-  {d:'木', t:'16:45-17:45', g:'HIPHOP',           who:'sho',    tc:'MINAMI',  style:['hiphop']},
-  {d:'木', t:'18:00-19:00', g:'HIPHOP',           who:'shochu', tc:'MINAMI',  style:['hiphop']},
-  {d:'金', t:'16:45-17:45', g:"Girl's HIPHOP",    who:'sho',    tc:'MAYU',    girls:true, style:['kpop','cute']},
-  {d:'金', t:'18:00-19:00', g:"Girl's HIPHOP",    who:'shochu', tc:'MAYU',    girls:true, style:['kpop','cute']},
-  {d:'金', t:'19:15-20:15', g:"Girl's HIPHOP",    who:'adult',  tc:'MAYU',    girls:true},
-  {d:'土', t:'10:30-11:30', g:'BREAK',            who:'all',    tc:'HIRO',    style:['acro']},
-  {d:'土', t:'11:45-12:45', g:'ダンス基礎',       who:'all',    tc:'MINAMI'},
-  {d:'土', t:'13:00-14:00', g:'BREAK',            who:'all',    tc:'HIRO',    style:['acro']},
-  {d:'土', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'COCONA'},
-  {d:'土', t:'16:45-17:45', g:'HIPHOP',           who:'sho',    tc:'COCONA',  style:['hiphop']},
-  {d:'土', t:'18:00-19:00', g:'HIPHOP',           who:'shochu', tc:'COCONA',  style:['hiphop']},
-  {d:'土', t:'19:15-21:15', g:'練習会',           who:'all',    tc:'HIRO'},
+  {id:110, d:'月', t:'17:05-17:45', g:'キッズダンス',     who:'kids',   tc:'RINKA'},
+  {id:111, d:'月', t:'18:00-19:00', g:'K-POP&HIPHOP',     who:'sho',    tc:'RINKA',   style:['kpop','hiphop']},
+  {id:112, d:'月', t:'19:15-20:15', g:'K-POP&HIPHOP',     who:'shochu', tc:'RINKA',   style:['kpop','hiphop']},
+  {id:89,  d:'火', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'NAMIKI'},
+  {id:90,  d:'火', t:'16:45-17:45', g:'ストリートJAZZ',   who:'sho',    tc:'NAMIKI',  girls:true, style:['cute']},
+  {id:91,  d:'火', t:'18:00-19:00', g:'ストリートJAZZ',   who:'shochu', tc:'NAMIKI',  girls:true, style:['cute']},
+  {id:92,  d:'火', t:'19:15-20:15', g:'SOUL&WAACK',       who:'adult',  tc:'SAYUMI'},
+  {id:93,  d:'火', t:'20:30-21:30', g:'K-POP（ガールズ）', who:'adult',  tc:'HIRAMAI', style:['kpop']},
+  {id:94,  d:'水', t:'11:45-12:45', g:'K-POP（ボーイズ）', who:'adult',  tc:'HIRAMAI'},
+  {id:95,  d:'水', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'HIRAMAI'},
+  {id:96,  d:'水', t:'16:45-17:45', g:'LOCK',             who:'sho',    tc:'HIRAMAI', style:['fun']},
+  {id:97,  d:'水', t:'18:00-19:00', g:'LOCK',             who:'shochu', tc:'HIRAMAI', style:['fun']},
+  {id:98,  d:'水', t:'19:15-20:15', g:'LOCK',             who:'adult',  tc:'HIRAMAI', style:['fun']},
+  {id:122, d:'水', t:'20:30-22:00', g:'LOCK',             who:'adult',  tc:'HIRAMAI'},
+  {id:99,  d:'木', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'MINAMI'},
+  {id:100, d:'木', t:'16:45-17:45', g:'HIPHOP',           who:'sho',    tc:'MINAMI',  style:['hiphop']},
+  {id:101, d:'木', t:'18:00-19:00', g:'HIPHOP',           who:'shochu', tc:'MINAMI',  style:['hiphop']},
+  {id:102, d:'金', t:'16:45-17:45', g:"Girl's HIPHOP",    who:'sho',    tc:'MAYU',    girls:true, style:['kpop','cute']},
+  {id:103, d:'金', t:'18:00-19:00', g:"Girl's HIPHOP",    who:'shochu', tc:'MAYU',    girls:true, style:['kpop','cute']},
+  {id:104, d:'金', t:'19:15-20:15', g:"Girl's HIPHOP",    who:'adult',  tc:'MAYU',    girls:true},
+  {id:83,  d:'土', t:'10:30-11:30', g:'BREAK',            who:'all',    tc:'HIRO',    style:['acro']},
+  {id:84,  d:'土', t:'11:45-12:45', g:'ダンス基礎',       who:'all',    tc:'MINAMI'},
+  {id:126, d:'土', t:'13:00-14:00', g:'BREAK',            who:'all',    tc:'HIRO',    style:['acro']},
+  {id:85,  d:'土', t:'15:50-16:30', g:'キッズダンス',     who:'kids',   tc:'COCONA'},
+  {id:86,  d:'土', t:'16:45-17:45', g:'HIPHOP',           who:'sho',    tc:'COCONA',  style:['hiphop']},
+  {id:87,  d:'土', t:'18:00-19:00', g:'HIPHOP',           who:'shochu', tc:'COCONA',  style:['hiphop']},
+  {id:88,  d:'土', t:'19:15-21:15', g:'練習会',           who:'all',    tc:'HIRO'},
 ];
 
 /* ===== 先生（写真は images/teachers/名前.jpg を置くと表示されます） ===== */
@@ -1003,6 +1005,7 @@ const TEACHERS = [
 ];
 
 const DAYS = ['月','火','水','木','金','土','日'];
+const BOOKING = 'https://dance-basis.web.app/booking/13'; // 各クラスの予約ページは BOOKING/id
 const WHO = {kids:'キッズ', sho:'小学生', shochu:'小〜中学生', all:'年齢制限なし', adult:'一般'};
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const limLabel = l => l.who === 'adult' ? '女性限定' : '女の子限定';
@@ -1012,12 +1015,13 @@ const week = document.getElementById('week');
 week.innerHTML = DAYS.map(d => {
   const list = LESSONS.filter(l => l.d === d);
   const body = list.length
-    ? list.map(l => `<div class="lesson ${l.who}" data-who="${l.who}">
+    ? list.map(l => `<a class="lesson ${l.who}" data-who="${l.who}" href="${BOOKING}/${l.id}" target="_blank" rel="noopener" title="このクラスの体験を予約する">
         <span class="t">${l.t}</span>
         <span class="g">${esc(l.g)}</span>
         <span class="w">${WHO[l.who]}${l.girls ? `<span class="lim">${limLabel(l)}</span>` : ''}</span>
         <div class="tc">${l.tc}</div>
-      </div>`).join('')
+        <span class="go">体験予約 →</span>
+      </a>`).join('')
     : '<div class="rest-day">おやすみ<br><small>（イベントがある日も）</small></div>';
   return `<div class="day"><div class="day-head">${d}</div><div class="day-body">${body}</div></div>`;
 }).join('');
