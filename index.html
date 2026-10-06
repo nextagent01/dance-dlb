@@ -212,6 +212,17 @@ section{padding:96px 0;position:relative}
 .chip.star{background:var(--grad);color:#fff;border-color:transparent}
 .video{margin-left:auto;font-size:12px;font-weight:900;text-decoration:none;color:var(--rose)}
 .video:hover{text-decoration:underline}
+/* クリックで開く「曜日・時間」リスト（ジャンル・先生共通） */
+.genre,.teacher{cursor:pointer}
+.more{display:block;width:100%;margin-top:14px;font-family:inherit;font-size:12px;font-weight:900;color:var(--rose-deep);background:var(--blush);border:0;border-radius:999px;padding:8px 12px;cursor:pointer}
+.slots{display:grid;gap:6px;margin-top:10px;text-align:left}
+.slots[hidden]{display:none}
+.slot{display:flex;gap:8px;align-items:baseline;font-size:12.5px;font-weight:700;line-height:1.4;text-decoration:none;color:var(--ink);background:var(--bg);border-radius:10px;padding:7px 10px;transition:background .2s}
+.slot:hover{background:var(--blush)}
+.slot b{flex:none;font-weight:900;color:var(--rose-deep)}
+.slot .s-time{flex:none;font-family:var(--serif)}
+.slot .s-info{flex:1;min-width:0;font-size:11.5px;color:var(--ink-soft)}
+.slot .s-go{flex:none;color:var(--rose)}
 .g-kids .genre-top{background:linear-gradient(135deg,#FFE6DC,#FFF3D9)}
 .g-base .genre-top{background:linear-gradient(135deg,#FFE3EC,#EFE6FF)}
 .g-kpop .genre-top{background:linear-gradient(135deg,#FFD6E4,#FFEFF4)}
@@ -710,7 +721,7 @@ footer a:hover{opacity:1;text-decoration:underline}
     <div class="sec-head reveal">
       <span class="sec-en">Schedule</span>
       <h2>1週間のスケジュール</h2>
-      <p>学校のあとに通える、夕方のクラスがいっぱい</p>
+      <p>気になるクラスをクリックすると、そのまま体験レッスンを予約できます！</p>
     </div>
     <div class="filters" role="group" aria-label="対象で絞り込み">
       <button class="filter" data-f="all-view" aria-pressed="true">すべて</button>
@@ -1047,9 +1058,47 @@ document.getElementById('teacherList').innerHTML = TEACHERS.map(t => {
       <div class="role">${esc(t.r)}</div>
       ${days ? `<span class="day-chip">${days}曜日</span>` : ''}
       <p>${esc(t.p)}</p>
+      ${slots(LESSONS.filter(l => l.tc === t.n), l => `${esc(l.g)}・${WHO[l.who]}`)}
     </div>
   </div>`;
 }).join('');
+
+/* ---- ジャンル：カードに曜日・時間リストを追加 ---- */
+const GENRE_MATCH = {
+  kids:   l => l.g === 'キッズダンス',
+  base:   l => l.g === 'ダンス基礎',
+  kpop:   l => l.g.startsWith('K-POP'),
+  girls:  l => l.g === "Girl's HIPHOP",
+  jazz:   l => l.g === 'ストリートJAZZ',
+  hiphop: l => l.g === 'HIPHOP' || l.g === 'K-POP&HIPHOP',
+  lock:   l => l.g === 'LOCK',
+  break:  l => l.g === 'BREAK',
+  waack:  l => l.g === 'SOUL&WAACK',
+};
+document.querySelectorAll('.genre').forEach(card => {
+  const key = [...card.classList].find(c => c.startsWith('g-')).slice(2);
+  const match = GENRE_MATCH[key];
+  if (match) card.querySelector('.genre-body').insertAdjacentHTML('beforeend',
+    slots(LESSONS.filter(match), l => `${esc(l.g)}・${WHO[l.who]}・${l.tc}先生`));
+});
+
+/* ---- カードをクリックで開閉（中のリンクはそのまま動く） ---- */
+document.querySelectorAll('.genre, .teacher').forEach(card => card.addEventListener('click', e => {
+  if (e.target.closest('a')) return;
+  const btn = card.querySelector('.more');
+  if (!btn) return;
+  const open = btn.getAttribute('aria-expanded') !== 'true';
+  btn.setAttribute('aria-expanded', open);
+  btn.textContent = open ? '▲ 閉じる' : '▼ 曜日・時間を見る';
+  card.querySelector('.slots').hidden = !open;
+}));
+
+function slots(list, info) {
+  if (!list.length) return '';
+  return `<button type="button" class="more" aria-expanded="false">▼ 曜日・時間を見る</button>
+    <div class="slots" hidden>${list.map(l => `<a class="slot" href="${BOOKING}/${l.id}" target="_blank" rel="noopener">
+      <b>${l.d}</b><span class="s-time">${l.t}</span><span class="s-info">${info(l)}</span><span class="s-go">予約→</span></a>`).join('')}</div>`;
+}
 
 /* ---- 診断 ---- */
 const box = document.getElementById('quizBox');
