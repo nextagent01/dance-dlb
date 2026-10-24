@@ -150,6 +150,7 @@ section{padding:96px 0;position:relative}
 .dark .sec-head p{color:#B9AFC0}
 .sec-head h2{display:inline-block;font-weight:900;font-size:clamp(20px,3vw,28px);letter-spacing:.08em;margin-top:-14px;position:relative;background:var(--rose);color:#fff;padding:2px 16px;transform:rotate(-1.5deg)}
 .sec-head p{margin-top:12px;font-weight:700;color:var(--ink-soft);font-size:15px}
+.sec-head p.one-line{white-space:nowrap;font-size:min(15px,calc((100vw - 44px) / 25))} /* スマホでも1行に収める */
 .soft{background:var(--grad-soft)}
 .white{background:#fff}
 
@@ -573,7 +574,7 @@ footer a:hover{opacity:1;text-decoration:underline}
     <div class="sec-head reveal">
       <span class="sec-en">Our Promise</span>
       <h2>BASISの3つのこだわり</h2>
-      <p>「やさしい」と「本格的」を、どちらもあきらめない。</p>
+      <p class="one-line">「楽しい」と「本格的」を、どちらもあきらめない。</p>
     </div>
     <div class="concept">
       <div class="c-card reveal">
