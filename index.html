@@ -153,6 +153,21 @@ section{padding:96px 0;position:relative}
 .soft{background:var(--grad-soft)}
 .white{background:#fff}
 
+/* ---------- sns ---------- */
+.sns{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sns-card{display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:var(--ink);background:var(--bg);border-radius:var(--radius);padding:32px 24px 26px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+.sns-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.sns-icon{display:grid;place-items:center;width:68px;height:68px;border-radius:20px;color:#fff;margin-bottom:14px}
+.sns-icon svg{width:34px;height:34px}
+.sns-ig .sns-icon{background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7)}
+.sns-tt .sns-icon{background:#111;box-shadow:-3px -3px 0 #25F4EE,3px 3px 0 #FE2C55}
+.sns-yt .sns-icon{background:#fff;color:#FF0000;box-shadow:inset 0 0 0 2px #FFE0E0}
+.sns-name{font-family:var(--serif);font-size:28px;letter-spacing:.04em;line-height:1.1}
+.sns-id{font-size:12px;font-weight:900;color:var(--rose-deep);margin:4px 0 12px;overflow-wrap:anywhere}
+.sns-card p{font-size:13.5px;font-weight:700;color:var(--ink-soft);margin-bottom:18px}
+.sns-go{margin-top:auto;font-size:13px;font-weight:900;color:#fff;background:var(--grad);border-radius:999px;padding:8px 22px}
+@media (max-width:840px){.sns{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+
 /* ---------- concept ---------- */
 .concept{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .c-card{background:#fff;border-radius:var(--radius);padding:36px 28px 30px;box-shadow:var(--shadow);text-align:center;position:relative;overflow:hidden}
@@ -755,6 +770,40 @@ footer a:hover{opacity:1;text-decoration:underline}
   </div>
 </section>
 
+<!-- ===== SNS ===== -->
+<section id="sns" class="white">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-en">SNS</span>
+      <h2>SNSで教室の雰囲気がわかる！</h2>
+      <p>レッスンの様子や発表会、先生のダンスを毎日発信中。フォローして、通う前にのぞいてみてね！</p>
+    </div>
+    <div class="sns">
+      <a class="sns-card sns-ig reveal" href="https://www.instagram.com/danceschoolbasis_hattori/" target="_blank" rel="noopener">
+        <span class="sns-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        <span class="sns-name">Instagram</span>
+        <span class="sns-id">@danceschoolbasis_hattori</span>
+        <p>服部教室のレッスン風景や生徒たちの成長をお届け。教室の毎日がわかります。</p>
+        <span class="sns-go">フォローする →</span>
+      </a>
+      <a class="sns-card sns-tt reveal" href="https://www.tiktok.com/@basis.channel" target="_blank" rel="noopener">
+        <span class="sns-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.6 2.6 2.4 4.2 5 4.5"/></svg></span>
+        <span class="sns-name">TikTok</span>
+        <span class="sns-id">@basis.channel</span>
+        <p>先生や生徒のダンス動画を発信中。流行りの曲で踊る、BASISのかっこよさをチェック！</p>
+        <span class="sns-go">フォローする →</span>
+      </a>
+      <a class="sns-card sns-yt reveal" href="https://www.youtube.com/channel/UCvNEQeKGS4KNWk99_RIA6YA" target="_blank" rel="noopener">
+        <span class="sns-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="M10 9l5 3-5 3z" fill="#fff"/></svg></span>
+        <span class="sns-name">YouTube</span>
+        <span class="sns-id">BASIS 公式チャンネル</span>
+        <p>発表会やイベントのステージ、クラスの動画を公開中。レッスンの雰囲気がよくわかります。</p>
+        <span class="sns-go">チャンネルを見る →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== TRIAL ===== -->
 <section id="trial">
   <div class="wrap">
@@ -944,7 +993,7 @@ footer a:hover{opacity:1;text-decoration:underline}
         <h4>SNS・動画</h4>
         <ul>
           <li><a href="https://www.youtube.com/@BasisDance" target="_blank" rel="noopener">YouTube（BASIS公式）</a></li>
-          <li><a href="https://www.instagram.com/dancestudio_dlb" target="_blank" rel="noopener">Instagram（服部教室）</a></li>
+          <li><a href="https://www.instagram.com/danceschoolbasis_hattori/" target="_blank" rel="noopener">Instagram（服部教室）</a></li>
           <li><a href="https://www.instagram.com/danceschool_basis/" target="_blank" rel="noopener">Instagram（BASIS公式）</a></li>
           <li><a href="https://www.tiktok.com/@basis.channel" target="_blank" rel="noopener">TikTok</a></li>
           <li><a href="https://line.me/R/ti/p/@226tifen" target="_blank" rel="noopener">LINE公式アカウント</a></li>
